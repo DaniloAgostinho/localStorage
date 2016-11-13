@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fomulário de Cadastro - Teste Front-end Amil</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <hgroup>
+            <h1>Cadastre-se</h1>
+            <h2>Informe seus dados</h2>
+        </hgroup>
+        <form method="get" id="validacao">
+            <p>
+              <label for="nome"></label>
+              <input type="text" name="nome" minlength="2" id="nome"  placeholder="Digite seu nome" required/>
+            </p>
+            <p>
+              <label for="telefone"></label>
+              <input class="phone" name="telefone" type="text"  placeholder="Digite seu telefone" id="telefone" required />
+            </p>
+            <p>
+              <label for="email"></label>
+              <input  name="email" type="email" id="email" placeholder="Digite seu E-mail" required />
+            </p>
+            <input type="button" id="salvar" value="salvar">
+            <input type="button" class="submit" id="cancelar" value="cancelar">
+        </form>
+
+        <h3>Lista de contatos</h3>
+
+    <div id="tabela">
+      <center>
+        <table>
+          <tr>
+            <th>nome</th>
+            <th>fone</th>
+            <th>email</th>
+          </tr>
+          <tr>
+            <td id="showNome"></td>
+            <td id="showTelefone"></td>
+            <td id="showEmail"></td>
+          </tr>
+        </table>
+      </center>
+    </div><!--tabela-->
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+    <script  src="http://igorescobar.github.io/jQuery-Mask-Plugin/js/jquery.mask.min.js"></script>
+    <script  src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.15.0/jquery.validate.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/validaForm.js"></script>
+</body>
+
+</html>
